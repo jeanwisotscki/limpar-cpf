@@ -1,0 +1,8 @@
+li {
+  padding: 5px;
+  font-family: monospace;
+}
+
+li:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.1);
+}
