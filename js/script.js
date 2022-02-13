@@ -1,11 +1,7 @@
 const cpfs = document.querySelectorAll(".cpf li");
 
-function elementsInnerText(elements) {
-  const arrayElements = Array.from(elements);
-
-  return arrayElements.map((element) => {
-    return element.innerText;
-  });
-}
+const elementsInnerText = ([...elements]) => {
+  return elements.map((element) => element.innerText);
+};
 
 console.log(elementsInnerText(cpfs));
